@@ -13,7 +13,7 @@ document.querySelector(".rubber").onclick = function () {
         this.style
     }
 }
-canvas.onmouseup = () => isDrawing = false
+window.onmouseup = () => isDrawing = false
 canvas.onmousemove = (event) => {
     if (isDrawing) {
         draw({
