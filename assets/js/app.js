@@ -4,6 +4,11 @@ let isDrawing = false
 let rubber = false
 let positionX = 0
 let positionY = 0
+window.onload = () => {
+    canvas.width = innerWidth / 1.05
+    canvas.height = innerHeight / 1.2
+}
+
 document.querySelector(".rubber").onclick = function () {
     this.classList.toggle("active")
     if (rubber) {
